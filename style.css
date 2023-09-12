@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+#container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 30px;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 308px;
+    height: 220px;
+    background:#F6F8FA;
+    border-radius: 5px;
+    border: 1px #D8DEE4 solid;
+    padding: 16px;
+
+}
+
+.textfield {
+    
+}
+
+#login {
+    width: 100%;
+    padding: 5px 12px;
+    background: #1F883D;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+}
+
+a i {
+    font-size: 48px;
+    color: black;
+}
+
+input {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 5px 12px;
+    border: 1px solid ;
+
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 6px;
+}
+
+label {
+    
+}
