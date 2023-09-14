@@ -1,20 +1,49 @@
+:root {
+    --base: #F6F8FA;
+    --font: #000;
+    --card: #F6F8FA;
+    --border: rgb(185, 185, 185);
+
+    --little: 14px;
+    --medium: 16px;
+    --big: 24px;
+}
+
+[data-theme="dark"] {
+    --base: #0D1117;
+    --font: #fff;
+    --card: #161B22;
+    --border: rgb(50, 50, 50);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background: var(--base);
+    color: var(--font);
+}
+
+
 #main {
     width: 100vw;
     height: 100vh;
+
+ 
+  
 }
 
 
 #container {
     font-family: 'Noto Sans';
-    font-weight: 400;
+    font-weight: 300;
 
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +54,9 @@
 
 h1 {
     font-weight: lighter;
-    font-size: 24px;
+    font-weight: 200;
+    font-size: var(--big);
+    margin-top: 30px;
 }
 
 #header {
@@ -43,9 +74,9 @@ h1 {
     
     width: 308px;
     height: 220px;
-    background:#F6F8FA;
+    background: var(--card);
     border-radius: 5px;
-    border: 1px #D8DEE4 solid;
+    border: 1px var(--border) solid;
     padding: 16px;
 
     margin-top: 10px;
@@ -53,7 +84,7 @@ h1 {
 }
 
 .textfield {
-    font-size: 14px;
+    font-size: var(--little);
 }
 
 #login {
@@ -61,9 +92,7 @@ h1 {
     padding: 8px 16px;
     background: #1F883D;
     color: white;
-    font-weight: bold;
     
-
     border: none;
     border-radius: 6px;
 
@@ -73,9 +102,9 @@ h1 {
 }
 
 a i {
-    text-decoration:;
+    
     font-size: 48px;
-    color: black;
+    color: var(--font);
 }
 
 input {
@@ -84,7 +113,9 @@ input {
     padding: 7px 12px;
     border: 1px solid ;
 
-    border: 1px solid rgb(185, 185, 185);
+    background: var(--base);
+    color: var(--font);
+    border: 1px solid var(--border);
     border-radius: 6px;
     outline: none;
 }
@@ -97,7 +128,7 @@ input {
     padding: 16px 16px;
     border-radius: 6px;
     
-    border: 1px solid rgb(185, 185, 185);
+    border: 1px solid var(--border);
 
     width: 308px;
     height: 55px;
@@ -122,7 +153,7 @@ ul > li {
 
 a {
     text-decoration: none;
-    color: #0969DA;
+    color: #2F81f7;
 }
 
 #contact {
@@ -130,7 +161,7 @@ a {
 }
 
 a:hover, #contact:hover{
-    color: #0969DA;
+    color: #2F81f7;
     text-decoration:underline;
 }
 
@@ -142,3 +173,21 @@ a:hover, #contact:hover{
 input:focus{
     border:2px solid #0969DA;
 }
+
+
+#DarkLight {
+    background: var(--base);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    cursor: pointer;
+
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+svg {
+    color: var(--font);
+}
+
